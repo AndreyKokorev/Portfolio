@@ -73,22 +73,27 @@ header {
   min-height: 170px;
   margin-top: 50px;
   padding: 10px;
-  //border: 1px solid black;
   border-radius: 5px;
   background: rgba(236, 69, 236, 0.24);
-  animation: neon 5s ease-in-out infinite alternate;
+  animation: neon1 5s ease-in-out infinite alternate;
+  perspective: 200px;
+  //perspective-origin: right bottom;
+  transform-style: flat;
 }
 
 .avatar {
   max-width: 300px;
   opacity: 0.7;
-  filter: hue-rotate(100deg);
+  transform: rotateX(-5deg) rotateY(8deg) rotateZ(4deg);
+  transform-origin: 50%;
+  animation: neon1 5s ease-in-out infinite alternate;
+  border: 1px solid black;
 }
 
 header .text-wrapper {
   display: grid;
   justify-items: center;
-
+  margin-top:20px;
 }
 
 .text-wrapper h1 {
@@ -106,7 +111,14 @@ header .text-wrapper {
 }
 
 .social a {
+  position: relative;
+  bottom:7px;
   color: yellow;
+  text-shadow: 5px 5px black;
+}
+.social a:hover {
+  text-shadow: none;
+  bottom:1px;
 }
 
 details {
@@ -158,9 +170,7 @@ details summary {
   justify-items: center;
 }
 
-.project-wrapper .project-inner-wrapper {
-
-}
+.project-wrapper .project-inner-wrapper {}
 
 .projects-wrapper h3 {
   margin-top: 10px;
@@ -308,15 +318,16 @@ button:active {
     display: none;
   }
 
-.projects-wrapper .project-inner-wrapper .project-x {
-    display:grid;
+  .projects-wrapper .project-inner-wrapper .project-x {
+    display: grid;
     justify-content: center;
   }
 
   .projects-wrapper .project-inner-wrapper .project-z {
-    display:grid;
+    display: grid;
     justify-content: center;
   }
+
   .projects-wrapper .project-inner-wrapper ul {
     margin-left: 30px;
   }
