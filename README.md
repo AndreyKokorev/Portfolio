@@ -1,2 +1,2 @@
 # Portfolio
-[Click here to look my work](https://andreykokorev.github.io/portfolio)
+[Click here to look my work](https://andreykokorev.github.io/Portfolio)
