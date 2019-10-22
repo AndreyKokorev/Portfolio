@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Asap Regular';
+  src: url('assets/fonts/Asap Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'Lucida Sans Italic';
+  src: url('assets/fonts/Lucida Sans Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Myraid Pro Regular';
+  src: url('assets/fonts/Myraid Pro Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow Bold';
+  src: url('assets/fonts/PT Sans Narrow Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PT Sans Regular';
+  src: url('assets/fonts/PT Sans regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  src: url('assets/fonts/Segoe UI Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe WP Light';
+  src: url('assets/fonts/Segoe WP Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe WP';
+  src: url('assets/fonts/Segoe WP.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url('assets/fonts/Segoe UI Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('assets/fonts/Segoe UI.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans Regular';
+  src: url('assets/fonts/OpenSans Regular.ttf') format('truetype');
+}

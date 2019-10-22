@@ -1,0 +1,1068 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body {
+  background: rgb(56, 56, 56);
+}
+.body-inner-wrapper {
+  display: grid;
+  grid-template-rows: 167px auto 43px;
+  max-width: 1300px;
+  margin: 0 auto;
+  background:white url('assets/images/img-1.jpg') no-repeat;
+}
+.body-inner-wrapper header {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr minmax(0,1fr);
+}
+.body-inner-wrapper header .logo-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 53px;
+}
+.body-inner-wrapper header .logo-wrapper h1 {
+  margin: 13px 0 0 82px;
+  font-family: Lucida Sans italic, Myraid Pro Regular;
+  font-size: 41.04912px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.4px;
+}
+.body-inner-wrapper header .logo-wrapper .logo-inner-wrapper {
+  position: absolute;
+  top: -10px;
+  left: -3px;
+  width: 79px;
+  height: 79px;
+  margin-bottom: 2px;
+  background: url('assets/images/logo.png') no-repeat 1px 2px;
+}
+.body-inner-wrapper header .logo-wrapper .logo-inner-wrapper img {
+  display: block;
+  transform: rotate(46.3deg);
+}
+.body-inner-wrapper header .header-nav {
+  margin-top: 15px;
+  margin-right: 83px;
+  box-shadow: -4px -5px #ccad1073, -8px -8px #bb991f6c;
+}
+.body-inner-wrapper header .header-nav ul {
+  display: grid;
+  grid-template-columns: 173px 133px 149px;
+  align-items: center;
+  width: 453px;
+  height: 41px;
+  background: #f5c506;
+  list-style: none;
+}
+.body-inner-wrapper header .header-nav ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+.body-inner-wrapper header .header-nav ul li a {
+  position: absolute;
+  font-family: Segoe WP, Myraid Pro Regular;
+  font-size: 17.04912px;
+  font-weight: 500;
+  color: rgba(155,125,8,255);
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+.body-inner-wrapper header .header-nav ul li svg {
+  position: absolute;
+}
+.body-inner-wrapper header .header-nav ul li:first-child {
+  border-right: 1px solid rgba(155,125,8,255);
+}
+.body-inner-wrapper header .header-nav ul li:first-child svg {
+  left: 37px;
+}
+.body-inner-wrapper header .header-nav ul li:first-child a {
+  right: 21px;
+}
+.body-inner-wrapper header .header-nav ul li:nth-child(2) {
+  border-right: 1px solid rgba(155,125,8,255);
+}
+.body-inner-wrapper header .header-nav ul li:nth-child(2) svg {
+  left: 12px;
+}
+.body-inner-wrapper header .header-nav ul li:nth-child(2) a {
+  right: 17px;
+}
+.body-inner-wrapper header .header-nav ul li:last-child svg {
+  top: 9px;
+  left: 15px;
+}
+.body-inner-wrapper header .header-nav ul li:last-child a {
+  right: 23px;
+  letter-spacing: 0.4px;
+}
+.body-inner-wrapper header nav li:hover {
+  color: white;
+  transform: scale(1.1);
+  background: #f5c506;
+}
+.body-inner-wrapper main {
+  display: grid;
+  grid-template-columns: minmax(0,1300px);
+  grid-template-rows: 399px 212px 509px 499px;
+}
+.body-inner-wrapper main .wrapper {
+  display: grid;
+  max-width: 1020px;
+}
+.body-inner-wrapper main .video-section {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+.body-inner-wrapper main .video-section .slider {
+  position: absolute;
+  top: 133px;
+  z-index: 100;
+  width: 32px;
+  height: 57px;
+  background: #c9a60c url('assets/icons/Shape 1.svg') no-repeat 46% 50%;
+}
+.body-inner-wrapper main .video-section .slider-forward {
+  right: 0;
+  transform: rotate(180deg);
+  background-position: 46% 52%;
+}
+.body-inner-wrapper main .video-section .slider:active {
+  background-color: #eeba11;
+}
+.body-inner-wrapper main .video-section .wrapper {
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper {
+  position: relative;
+  height: 327px;
+  margin-top: 1px;
+  margin-left: 10px;
+  box-shadow: 0 0 8px -5px;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .video-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('assets/images/video pattern mask.png');
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel {
+  position: absolute;
+  bottom: 29px;
+  left: 4px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 12px;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .play-button {
+  position: relative;
+  left: 9px;
+  bottom: 1px;
+  width: 27px;
+  height: 27px;
+  background: #d1a30c5b url('assets/icons/Shape 10 copy.svg') no-repeat 55% 50%;
+  background-size: 11px;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .stroke {
+  height: 100%;
+  width: 404px;
+  background: #d1a30c5b;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .stroke .timer {
+  width: 179px;
+  height: 12px;
+  background: #eecb06;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .volume {
+  position: relative;
+  right: 4px;
+  width: 19px;
+  height: 19px;
+  background: url('assets/icons/Shape 9.svg') no-repeat 30%;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .main-play-button {
+  position: absolute;
+  top: 40%;
+  left: 44%;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #f5c903c4;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper .main-play-button div {
+  height: 34px;
+  margin-left: 5px;
+  background: url('assets/icons/Shape 10 copy.svg') no-repeat 50%;
+}
+.body-inner-wrapper main .video-section .wrapper .video-wrapper video {
+  object-fit: inherit;
+}
+.body-inner-wrapper main .video-section .wrapper .video-name-wrapper {
+  position: absolute;
+  top: 78px;
+  right: -8px;
+  display: grid;
+  align-content: space-between;
+  width: 450px;
+  height: 121px;
+  font-family: Asap Regular, Myraid Pro regular;
+  text-align: center;
+  letter-spacing: 0.7px;
+}
+.body-inner-wrapper main .video-section .wrapper .video-name-wrapper h2:first-child {
+  margin-right: 8px;
+  font-size: 63.04912px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #f5c506;
+}
+.body-inner-wrapper main .video-section .wrapper .video-name-wrapper h2:last-child {
+  margin: 3px 0 0 5px;
+  font-size: 63.04912px;
+  font-weight: 400;
+  color: white;
+}
+.body-inner-wrapper main .services-section {
+  display: grid;
+  z-index: 10;
+  justify-content: center;
+  background: repeating-linear-gradient(45deg,transparent,transparent 0.05px,rgba(128,128,128,0.103) 2px,rgba(128,128,128,0.103) 4px);
+  box-shadow: 0 5px 7px -6px black, 0 -5px 7px -6px black;
+}
+.body-inner-wrapper main .services-section .wrapper {
+  grid-template-columns: repeat(3,minmax(185px,340px));
+}
+.body-inner-wrapper main .services-section .wrapper .service {
+  display: grid;
+  justify-content: center;
+  align-content: flex-end;
+  border-left: 1px solid #d4d4d4;
+}
+.body-inner-wrapper main .services-section .wrapper .service .service-icon {
+  text-align: center;
+  margin-bottom: 4px;
+}
+.body-inner-wrapper main .services-section .wrapper .service .service-name {
+  margin-bottom: 32px;
+  font-family: Segoe UI Light, Myriad Pro regular;
+  font-size: 27.04912px;
+}
+.body-inner-wrapper main .services-section .wrapper .service-1 .service-icon {
+  margin-right: 6px;
+}
+.body-inner-wrapper main .services-section .wrapper .service-1 .service-name {
+  margin-left: 18px;
+  letter-spacing: 0.2px;
+}
+.body-inner-wrapper main .services-section .wrapper .service-2 .service-icon {
+  margin-left: 15px;
+  margin-bottom: 8px;
+}
+.body-inner-wrapper main .services-section .wrapper .service-2 .service-name {
+  margin-left: 20px;
+  margin-bottom: 31px;
+  letter-spacing: 0.2px;
+}
+.body-inner-wrapper main .services-section .wrapper .service-3 {
+  border-right: 1px solid #d4d4d4;
+}
+.body-inner-wrapper main .services-section .wrapper .service-3 .service-icon {
+  margin-right: 21px;
+  margin-bottom: 3px;
+}
+.body-inner-wrapper main .services-section .wrapper .service-3 .service-name {
+  margin-right: 15px;
+  margin-bottom: 31px;
+  letter-spacing: 0.2px;
+}
+.body-inner-wrapper main .news-section {
+  display: grid;
+  justify-content: center;
+  background: url('assets/images/news-background.jpg');
+}
+.body-inner-wrapper main .news-section .wrapper {
+  grid-template-columns: minmax(580px,656px) 329px;
+  grid-template-rows: 110px 233px 86px 80px;
+  grid-column-gap: 34px;
+  color: white;
+}
+.body-inner-wrapper main .news-section .wrapper .open-news {
+  width: 11px;
+  height: 11px;
+  background: url('assets/images/Shape 11.svg') 50%;
+}
+.body-inner-wrapper main .news-section .wrapper .open-news:hover {
+  transform: scale(2);
+  transition: 1s;
+  fill: black;
+}
+.body-inner-wrapper main .news-section .wrapper .open-news:active {
+  transform: scale(0.7);
+  transition: 0.2s ease-in-out;
+}
+.body-inner-wrapper main .news-section .wrapper h2 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  align-self: center;
+  font-family: PT Sans Regular;
+  font-size: 37.04912px;
+  font-weight: 200;
+  letter-spacing: 0.4px;
+}
+.body-inner-wrapper main .news-section .wrapper .news-wrapper {
+  position: relative;
+  display: flex;
+}
+.body-inner-wrapper main .news-section .wrapper .news-wrapper .video-description {
+  padding: 0.85vw 0 0 1.5vw;
+  font-family: Segoe WP Light, Myriad Pro Regular;
+  font-size: 29.04912px;
+  font-weight: 100;
+  letter-spacing: 0.3px;
+  background: #ec9e03;
+}
+.body-inner-wrapper main .news-section .wrapper .news-wrapper .video-description .mobile {
+  display: none;
+}
+.body-inner-wrapper main .news-section .wrapper .news-wrapper .video {
+  position: relative;
+}
+.body-inner-wrapper main .news-section .wrapper .news-wrapper .video button {
+  position: absolute;
+  top: 40%;
+  left: 41.2%;
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background: #d1a30cc4;
+}
+.body-inner-wrapper main .news-section .wrapper .news-wrapper .video button div {
+  width: 17;
+  height: 31px;
+  margin-left: 5px;
+  background: url('assets/icons/Shape 10 copy.svg') no-repeat 50%;
+}
+.body-inner-wrapper main .news-section .wrapper .news-wrapper .open-news {
+  position: absolute;
+  bottom: 13px;
+  left: 315px;
+}
+.body-inner-wrapper main .news-section .wrapper .twitter-news {
+  display: grid;
+  justify-content: flex-end;
+  align-content: space-between;
+  background: url('assets/images/twitter.svg') no-repeat 48% 77%, #ec9e03;
+}
+.body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input {
+  display: none;
+}
+.body-inner-wrapper main .news-section .wrapper .twitter-news .twit-number {
+  margin-right: 17px;
+  margin-top: 11px;
+  font-family: Segoe Wp Light, Myria Pro regular;
+  font-size: 25.04912px;
+  letter-spacing: 0.5px;
+}
+.body-inner-wrapper main .news-section .wrapper .twitter-news .open-news {
+  margin-left: 23px;
+  margin-bottom: 13px;
+  fill: white;
+}
+.body-inner-wrapper main .news-section .wrapper .date-wrapper {
+  width: 113px;
+  text-align: center;
+  background: #ddb101;
+}
+.body-inner-wrapper main .news-section .wrapper .date-wrapper .date {
+  display: block;
+  margin-top: 12px;
+  margin-left: 5px;
+  font-family: Segoe UI Bold, Myriad Pro Regular;
+  font-size: 51.04912px;
+  line-height: 40px;
+}
+.body-inner-wrapper main .news-section .wrapper .date-wrapper .month {
+  position: relative;
+  top: 2px;
+  left: 2px;
+  display: block;
+  font-family: Segoe UI;
+  font-size: 21.04912px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: rgba(178,101,41,255);
+}
+.body-inner-wrapper main .news-section .wrapper input[type="range"] {
+  -webkit-appearance: none;
+  grid-row-start: 4;
+  width: 896px;
+  height: 15px;
+  margin-top: 43px;
+  margin-left: 73px;
+  background: rgba(255,255,255,0.459);
+  border-radius: 10px;
+}
+.body-inner-wrapper main .news-section .wrapper input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 197px;
+  height: 15px;
+  background: #ec9e03;
+  border-radius: 10px;
+}
+.body-inner-wrapper main .its-free {
+  display: grid;
+  justify-content: center;
+  background: url('assets/images/Layer 32 mask.png'), url('assets/images/Layer 32.png');
+  grid-template-columns: minmax(auto,1020px);
+}
+.body-inner-wrapper main .its-free .wrapper {
+  display: grid;
+  grid-template-columns: 570px 420px;
+  grid-template-rows: 135px;
+  justify-content: space-between;
+}
+.body-inner-wrapper main .its-free .wrapper h2 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  justify-self: center;
+  align-self: center;
+  margin-left: 6px;
+  margin-bottom: 10px;
+  font-family: PT sans Regular, Myriad Pro Regular;
+  font-size: 43.04912px;
+  font-weight: 200;
+  color: rgba(245,197,6,255);
+  letter-spacing: 0.5px;
+}
+.body-inner-wrapper main .its-free .wrapper .image-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-content: space-around;
+  align-content: flex-start;
+  padding-left: 7px;
+}
+.body-inner-wrapper main .its-free .wrapper .image-wrapper .img-wrapper {
+  width: 320px;
+  height: 255px;
+}
+.body-inner-wrapper main .its-free .wrapper .image-wrapper img {
+  margin-top: 5px;
+}
+.body-inner-wrapper main .its-free .wrapper .image-wrapper img:first-child {
+  position: relative;
+  bottom: 120px;
+}
+.body-inner-wrapper main .its-free .wrapper .image-wrapper img:nth-child(2) {
+  align-self: center;
+}
+.body-inner-wrapper main .its-free .wrapper .image-wrapper img:last-child {
+  align-self: flex-end;
+  margin-bottom: 38px;
+}
+.body-inner-wrapper main .its-free .wrapper .image-wrapper .img-wrapper::before {
+  content: "ITS 100% FREE";
+  position: relative;
+  z-index: 100;
+  right: 21px;
+  bottom: 42px;
+  display: block;
+  width: 116px;
+  height: 116px;
+  font-family: PT Sans Narrow Bold, Myriad Pro Regular;
+  font-size: 18px;
+  line-height: 120px;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: #f5c506;
+  border-radius: 50%;
+}
+.body-inner-wrapper main .its-free .wrapper ul {
+  margin-top: 45.5px;
+  margin-left: 72px;
+  list-style: none;
+}
+.body-inner-wrapper main .its-free .wrapper ul li {
+  position: relative;
+  margin-bottom: 21px;
+  font-family: OpenSans Regular, Myriad Pro Regular;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.1px;
+  color: rgba(169,169,167,255);
+}
+.body-inner-wrapper main .its-free .wrapper ul li:nth-child(2) {
+  margin-bottom: 13px;
+}
+.body-inner-wrapper main .its-free .wrapper ul li:nth-child(3) {
+  margin-bottom: 23px;
+}
+.body-inner-wrapper main .its-free .wrapper ul li::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 6px;
+  display: block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  background: #f5c506;
+  border-radius: 50%;
+}
+.body-inner-wrapper footer {
+  display: grid;
+  grid-template-columns: minmax(0,640px);
+  justify-items: center;
+  background: #4c4c4c;
+  box-shadow: 0 -8px 7px -6px black;
+}
+.body-inner-wrapper footer .wrapper {
+  display: grid;
+  grid-template-columns: minmax(0,1020px);
+}
+.body-inner-wrapper footer .wrapper .logo-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.body-inner-wrapper footer .wrapper .logo-wrapper h1 {
+  margin-left: 6px;
+  font-family: Lucida Sans italic, Myraid Pro Regular;
+  font-size: 28.5px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.6px;
+}
+.body-inner-wrapper footer .wrapper .logo-wrapper .logo-inner-wrapper {
+  width: 53px;
+  height: 53px;
+  background: url('assets/images/logo.png') no-repeat 50%;
+  background-size: 96%;
+}
+.body-inner-wrapper footer .wrapper .logo-wrapper .logo-inner-wrapper img {
+  display: block;
+  transform: rotate(46.3deg);
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 640px) {
+  .body-inner-wrapper {
+    grid-template-rows: 62px auto 46px;
+    max-width: 640px;
+    margin: 0;
+    background: white;
+  }
+  .body-inner-wrapper header {
+    display: grid;
+    grid-template-columns: 186px 455px;
+    background: #5c5c5c;
+  }
+  .body-inner-wrapper header .logo-wrapper {
+    position: unset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .body-inner-wrapper header .logo-wrapper h1 {
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 16px;
+    font-family: Lucida Sans italic, Myraid Pro Regular;
+    font-size: 19.04912px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.4px;
+  }
+  .body-inner-wrapper header .logo-wrapper .logo-inner-wrapper {
+    position: unset;
+    width: 38px;
+    height: 37px;
+    margin: 0;
+    margin-left: 6px;
+    margin-bottom: 4px;
+    margin-right: -3px;
+    background: url('assets/images/logo.png') no-repeat 1px 2px 50%;
+    background-size: contain;
+  }
+  .body-inner-wrapper header .logo-wrapper .logo-inner-wrapper img {
+    display: block;
+    transform: rotate(46.3deg);
+    width: 100%;
+  }
+  .body-inner-wrapper header .header-nav {
+    height: 100%;
+    background: #f5c506;
+    box-shadow: none;
+    margin: 0;
+  }
+  .body-inner-wrapper header .header-nav ul {
+    display: grid;
+    grid-template-columns: 173px 133px 149px;
+    align-items: center;
+    height: 100%;
+  }
+  .body-inner-wrapper header .header-nav ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+  }
+  .body-inner-wrapper header .header-nav ul li a {
+    position: absolute;
+    bottom: 18px;
+    font-family: Segoe WP, Myraid Pro Regular;
+    font-size: 18.04912px;
+    font-weight: 500;
+    color: rgba(155,125,8,255);
+    text-decoration: none;
+    letter-spacing: 0.7px;
+  }
+  .body-inner-wrapper header .header-nav ul li svg {
+    display: none;
+  }
+  .body-inner-wrapper header .header-nav ul li:first-child {
+    border-right: 1px solid rgba(155,125,8,255);
+    background: url('assets/icons/Shape 5.svg') no-repeat;
+    background-size: 16%;
+    background-position: 14% 50%;
+  }
+  .body-inner-wrapper header .header-nav ul li:first-child a {
+    right: 25px;
+  }
+  .body-inner-wrapper header .header-nav ul li:nth-child(2) {
+    border-right: 1px solid rgba(155,125,8,255);
+    background: url('assets/icons/Shape 6.svg') no-repeat;
+    background-size: 18%;
+    background-position: 4% 55%;
+  }
+  .body-inner-wrapper header .header-nav ul li:nth-child(2) a {
+    right: 15px;
+  }
+  .body-inner-wrapper header .header-nav ul li:last-child {
+    background: url('assets/icons/Shape 7.svg') no-repeat;
+    background-size: 21%;
+    background-position: 7% 45%;
+  }
+  .body-inner-wrapper header .header-nav ul li:last-child a {
+    right: 17px;
+    letter-spacing: 0.4px;
+  }
+  .body-inner-wrapper header nav li:hover {
+    color: white;
+    transform: none;
+    background: #f5c506;
+    border-left: none;
+  }
+  .body-inner-wrapper header nav li:hover a {
+    color: white;
+    font-weight: bold;
+  }
+  .body-inner-wrapper main {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-rows: 327px 174px 482px 466px;
+  }
+  .body-inner-wrapper main .wrapper {
+    display: grid;
+    max-width: 100%;
+  }
+  .body-inner-wrapper main .video-section {
+    position: relative;
+    display: grid;
+    justify-content: center;
+  }
+  .body-inner-wrapper main .video-section .slider {
+    display: none;
+  }
+  .body-inner-wrapper main .video-section .wrapper {
+    grid-template-columns: auto;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper {
+    position: unset;
+    height: 327px;
+    margin: 0;
+    box-shadow: none;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .video-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('assets/images/video pattern mask.png');
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel {
+    position: absolute;
+    bottom: 29px;
+    left: 4px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 12px;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .play-button {
+    position: relative;
+    left: 47px;
+    bottom: 1px;
+    width: 27px;
+    height: 27px;
+    background: #d1a30c5b url('assets/icons/Shape 10 copy.svg') no-repeat 55% 50%;
+    background-size: 11px;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .stroke {
+    position: relative;
+    left: 8px;
+    height: 100%;
+    width: 404px;
+    background: #d1a30c5b;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .stroke .timer {
+    width: 179px;
+    height: 12px;
+    background: #eecb06;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .player-control-panel .volume {
+    position: relative;
+    right: 26px;
+    width: 19px;
+    height: 19px;
+    background: url('assets/icons/Shape 9.svg') no-repeat 30%;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .main-play-button {
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background: #f5c903c4;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper .main-play-button div {
+    height: 34px;
+    margin-left: 5px;
+    background: url('assets/icons/Shape 10 copy.svg') no-repeat 50%;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-wrapper video {
+    width: 640px;
+  }
+  .body-inner-wrapper main .video-section .wrapper .video-name-wrapper {
+    display: none;
+  }
+  .body-inner-wrapper main .services-section {
+    position: relative;
+    justify-content: center;
+    z-index: 10;
+    display: grid;
+    background: repeating-linear-gradient(45deg,transparent,transparent 0.05px,rgba(128,128,128,0.103) 2px,rgba(128,128,128,0.103) 4px);
+    box-shadow: none;
+  }
+  .body-inner-wrapper main .services-section .wrapper {
+    grid-template-columns: repeat(3,minmax(185px,340px));
+  }
+  .body-inner-wrapper main .services-section .wrapper .service {
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
+    border: none;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service .service-icon {
+    display: none;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service .service-name {
+    margin-bottom: 32px;
+    margin-right: 38px;
+    font-family: Segoe UI Light, Myriad Pro regular;
+    font-size: 23.04912px;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-1 {
+    background: url('assets/icons/Shape 2.svg') no-repeat;
+    background-position: 36% 29%;
+    background-size: 43%;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-1 .service-icon {
+    margin-right: 6px;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-1 .service-name {
+    margin-left: 18px;
+    letter-spacing: 0.2px;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-2 {
+    background: url('assets/icons/Shape 3.svg') no-repeat;
+    background-position: 54% 29%;
+    background-size: 33%;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-2 .service-icon {
+    margin-left: 15px;
+    margin-bottom: 8px;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-2 .service-name {
+    margin-left: 56px;
+    margin-bottom: 31px;
+    letter-spacing: 0.2px;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-3 {
+    border-right: 1px solid #d4d4d4;
+    background: url('assets/icons/Shape 4.svg') no-repeat;
+    background-position: 48% 26%;
+    background-size: 33%;
+  }
+  .body-inner-wrapper main .services-section .wrapper .service-3 .service-name {
+    margin-left: 45px;
+    margin-bottom: 32px;
+    letter-spacing: 0.2px;
+  }
+  .body-inner-wrapper main .news-section {
+    display: grid;
+    justify-content: center;
+    background: none;
+  }
+  .body-inner-wrapper main .news-section .wrapper {
+    grid-template-columns: 640px;
+    grid-template-rows: 249px 233px;
+    grid-column-gap: 0px;
+    color: white;
+  }
+  .body-inner-wrapper main .news-section .wrapper h2 {
+    display: none;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 9px;
+    padding: 0;
+    margin: 0;
+    margin: 7px 10px 0 10px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper .video-description {
+    display: flex;
+    justify-items: center;
+    width: 289px;
+    height: 227px;
+    font-family: Segoe WP Light, Myriad Pro Regular;
+    font-size: 29.04912px;
+    font-weight: 100;
+    letter-spacing: 0.3px;
+    background: #ec9e03;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper .video-description .desktop {
+    display: none;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper .video-description .mobile {
+    display: block;
+    width: 240px;
+    height: 189px;
+    margin-left: 15px;
+    margin-top: 10px;
+    line-height: 33px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper .video {
+    position: relative;
+    width: 315px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper .video button {
+    position: absolute;
+    top: 38%;
+    left: 41.2%;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background: #d1a30cc4;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper .video button div {
+    width: 17;
+    height: 31px;
+    margin-left: 5px;
+    background: url('assets/icons/Shape 10 copy.svg') no-repeat 50%;
+  }
+  .body-inner-wrapper main .news-section .wrapper .news-wrapper .open-news {
+    position: absolute;
+    bottom: 28px;
+    left: 276px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news {
+    display: grid;
+    justify-content: flex-end;
+    align-content: space-between;
+    background: url('assets/images/twitter.svg') no-repeat 16% 77%, #f5c507;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input {
+    display: block;
+    height: 100%;
+    width: 323px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .twit-message {
+    width: 287px;
+    height: 42px;
+    margin-bottom: 13px;
+    margin-left: 6px;
+    padding-left: 28px;
+    font-family: Arial, Muraid Pro regular;
+    font-size: 13.04912px;
+    line-height: 16px;
+    letter-spacing: 0.1px;
+    color: rgba(143,142,142,255);
+    background: url('assets/images/Rounded Rectangle 2 (1).svg') no-repeat;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .twit-message p {
+    padding-top: 6px;
+    width: 225px;
+    height: 28px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .viewed {
+    background: url('assets/images/Rounded Rectangle 2 (1) viewed.svg') no-repeat;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .input-wrapper {
+    width: 270px;
+    height: 29px;
+    margin-left: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .input-wrapper form {
+    height: 29px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .input-wrapper form input {
+    display: block;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .input-wrapper form input[type="text"] {
+    float: left;
+    height: 100%;
+    width: 201px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input .input-wrapper form input[type="submit"] {
+    float: right;
+    width: 69px;
+    height: 100%;
+    background: #d59311;
+    color: white;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twitter-message-and-input div:nth-child(3) {
+    margin-bottom: 15px;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .twit-number {
+    display: none;
+  }
+  .body-inner-wrapper main .news-section .wrapper .twitter-news .open-news {
+    display: none;
+  }
+  .body-inner-wrapper main .news-section .wrapper .date-wrapper {
+    display: none;
+  }
+  .body-inner-wrapper main .news-section .wrapper input[type="range"] {
+    display: none;
+  }
+  .body-inner-wrapper main .its-free {
+    grid-template-columns: minmax(auto,640px);
+  }
+  .body-inner-wrapper main .its-free .wrapper {
+    display: grid;
+    grid-template-columns: 640px;
+    grid-template-rows: 135px;
+    justify-content: space-between;
+    padding-top: 3px;
+  }
+  .body-inner-wrapper main .its-free .wrapper h2 {
+    margin: 0;
+    margin-right: 12px;
+    margin-bottom: 30px;
+    font-family: OpenSans Regular, Myriad Pro Regular;
+    font-size: 39.04912px;
+    font-weight: 200;
+    letter-spacing: 0.3px;
+  }
+  .body-inner-wrapper main .its-free .wrapper .image-wrapper {
+    position: relative;
+  }
+  .body-inner-wrapper main .its-free .wrapper .image-wrapper .img-wrapper {
+    position: relative;
+    bottom: 120px;
+    left: 5px;
+  }
+  .body-inner-wrapper main .its-free .wrapper .image-wrapper img {
+    margin-top: 5px;
+  }
+  .body-inner-wrapper main .its-free .wrapper .image-wrapper img:first-child {
+    position: absolute;
+    bottom: -304px;
+    left: 26px;
+  }
+  .body-inner-wrapper main .its-free .wrapper .image-wrapper img:nth-child(2) {
+    position: relative;
+    top: 15px;
+    left: 17px;
+    align-self: center;
+    margin-right: 25px;
+  }
+  .body-inner-wrapper main .its-free .wrapper .image-wrapper img:last-child {
+    position: relative;
+    top: 15px;
+    right: 22px;
+  }
+  .body-inner-wrapper main .its-free .wrapper .image-wrapper .img-wrapper::before {
+    right: 4px;
+    top: 95px;
+  }
+  .body-inner-wrapper main .its-free .wrapper ul {
+    display: none;
+  }
+  .body-inner-wrapper footer {
+    display: grid;
+    grid-template-columns: minmax(0,640px);
+    justify-items: center;
+    background: #4c4c4c;
+    box-shadow: 0 -8px 7px -6px black;
+  }
+  .body-inner-wrapper footer .wrapper {
+    display: grid;
+    grid-template-columns: minmax(0,640px);
+  }
+  .body-inner-wrapper footer .wrapper .logo-wrapper {
+    margin-left: 66px;
+    margin-bottom: 5px;
+  }
+  .body-inner-wrapper footer .wrapper .logo-wrapper h1 {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.6px;
+  }
+  .body-inner-wrapper footer .wrapper .logo-wrapper .logo-inner-wrapper {
+    width: 29px;
+    height: 29px;
+    background: url('assets/images/logo.png') no-repeat 50%;
+    background-size: 96%;
+  }
+  .body-inner-wrapper footer .wrapper .logo-wrapper .logo-inner-wrapper img {
+    display: block;
+    transform: rotate(46.3deg);
+    width: 100%;
+    height: 100%;
+  }
+}
