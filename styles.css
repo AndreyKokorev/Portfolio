@@ -69,7 +69,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: minmax(0, 500px) minmax(300px, 300px);
+  grid-template-columns: minmax(0, 500px) minmax(300px, 500px);
   min-height: 170px;
   margin-top: 50px;
   padding: 10px;
@@ -83,15 +83,12 @@ header {
   max-width: 300px;
   opacity: 0.7;
   filter: hue-rotate(100deg);
-
 }
 
-.text-wrapper {
+header .text-wrapper {
   display: grid;
   justify-items: center;
-  width: 500px;
-  margin-right: 10vw;
-  justify-self: center;
+
 }
 
 .text-wrapper h1 {
@@ -158,11 +155,11 @@ details summary {
 
 .projects-wrapper .text-wrapper {
   display: grid;
-  justify-content: flex-start;
+  justify-items: center;
 }
 
 .project-wrapper .project-inner-wrapper {
-  mix-blend-mode: hard-light;
+
 }
 
 .projects-wrapper h3 {
@@ -175,11 +172,12 @@ details summary {
 .projects-wrapper ul {
   height: 80px;
   list-style: georgian;
+  justify-self: flex-start;
 }
 
 .projects-wrapper li {
   height: 50px;
-  margin-left: 37px;
+  margin-left: 45px;
 }
 
 .projects-wrapper img {
@@ -208,6 +206,7 @@ details summary {
 
 .projects-wrapper .project-x {
   display: flex;
+  justify-content: space-between;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: bold;
@@ -215,6 +214,7 @@ details summary {
 
 .projects-wrapper .project-z {
   display: flex;
+  justify-content: space-between;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   font-weight: bold;
@@ -308,12 +308,17 @@ button:active {
     display: none;
   }
 
-  .project-x {
+.projects-wrapper .project-inner-wrapper .project-x {
+    display:grid;
     justify-content: center;
   }
 
-  .project-z {
+  .projects-wrapper .project-inner-wrapper .project-z {
+    display:grid;
     justify-content: center;
+  }
+  .projects-wrapper .project-inner-wrapper ul {
+    margin-left: 30px;
   }
 
   details {
