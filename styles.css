@@ -22,7 +22,7 @@
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #07b8ee8e, 0 0 35px #07b8ee8e, 0 0 40px #07b8ee8e, 0 0 50px #07b8ee8e, 0 0 75px #07b8ee8e;
   }
 }
-
+/*
 @keyframes neon2 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #07b8ee8e, 0 0 70px #07b8ee8e, 0 0 80px #07b8ee8e, 0 0 100px #07b8ee8e, 0 0 150px #07b8ee8e;
@@ -42,7 +42,7 @@
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(34, 255, 244), 0 0 35px rgb(34, 255, 244), 0 0 40px rgb(34, 255, 244), 0 0 50px rgb(34, 255, 244), 0 0 75px rgb(34, 255, 244);
   }
 }
-
+*/
 * {
   margin: 0;
   padding: 0;
