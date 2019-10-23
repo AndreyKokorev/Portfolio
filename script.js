@@ -12,7 +12,9 @@ function changeSlide(n) {
   index = (index > 1) ? 0 : (index < 0) ? 1 : index;
   slides[index].style.display = "block";
 
-} {
+} 
+//Swiper
+{
   let swipeArea = document.querySelectorAll('.project-inner-wrapper');
   for (let item of swipeArea) {
     swipeDetect(item);
@@ -20,7 +22,7 @@ function changeSlide(n) {
 
   function swipeDetect(swipeArea) {
     let startX = 0;
-    let distX = 0;
+    let dist = 0;
 
     swipeArea.addEventListener('touchstart', function (e) {
       startX = e.pageX;
@@ -71,4 +73,21 @@ console.log(description1);;
     })
   }
 
+}
+shaker();
+function shaker(){
+  let main = document.querySelector('body');
+  setInterval(function(){
+    main.style.marginTop = `${Math.random()*0.7}px`;
+  }, 170)
+  
+  setInterval(function(){
+    main.style.marginLeft = `${Math.random()*0.7}px`;
+  }, 220)
+
+  
+  setInterval(function(){
+    main.style.marginTop = "0px";
+    main.style.marginLeft = "0px";
+  }, 270)
 }

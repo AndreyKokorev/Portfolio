@@ -51,13 +51,14 @@
 }
 
 html {
-  background: rgba(255, 255, 255, 0.993);
+  background: rgba(10, 10, 10, 0.993);
 }
 
 body {
   max-width: 1920px;
-  height: 1000px;
+  min-height: 1100px;
   background: url('assets/images/3.jpg') 50%;
+  background-attachment: fixed;
 }
 
 .main-container {
@@ -68,9 +69,11 @@ body {
 }
 
 header {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 500px) minmax(300px, 500px);
   min-height: 170px;
+  height: 300px;
   margin-top: 50px;
   padding: 10px;
   border-radius: 5px;
@@ -79,6 +82,18 @@ header {
   perspective: 200px;
   //perspective-origin: right bottom;
   transform-style: flat;
+}
+
+audio {
+  position: absolute;
+  bottom: 113px;
+  left: 18px;
+  max-height: 28px;
+  border-radius: 0;
+  opacity: 0.5;
+  width: 291px;
+  transform: rotateX(-5deg) rotateY(8deg) rotateZ(4deg);
+  background: rgb(252, 248, 248);
 }
 
 .avatar {
@@ -93,15 +108,16 @@ header {
 header .text-wrapper {
   display: grid;
   justify-items: center;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .text-wrapper h1 {
   font-family: Downcome;
   font-size: 45px;
-  color: rgb(0, 0, 0);
+  color: rgba(5, 5, 5, 0.973);
+  //text-shadow: 5px 5px rgba(155, 31, 180, 0.438), 4px 4px black;
   text-shadow: 3px 3px rgb(247, 247, 5), 4px 4px black;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .social {
@@ -112,13 +128,15 @@ header .text-wrapper {
 
 .social a {
   position: relative;
-  bottom:7px;
+  bottom: 7px;
   color: yellow;
   text-shadow: 5px 5px black;
+  opacity: 0.9;
 }
+
 .social a:hover {
   text-shadow: none;
-  bottom:1px;
+  bottom: 1px;
 }
 
 details {
@@ -156,6 +174,7 @@ details summary {
   font-family: Downcome;
   font-size: 40px;
   animation: neon4 1s linear infinite alternate;
+  opacity: 0.8;
 }
 
 .projects-wrapper {
@@ -285,13 +304,6 @@ button:active {
   top: -43px;
 }
 
-
-@media only screen and (max-width: 800px) {
-  .main-container .project-wrapper button {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 950px) {
   button {
     display: none;
@@ -299,7 +311,20 @@ button:active {
 
 }
 
+@media only screen and (max-width: 800px) {
+  audio {
+    left:14px;
+  }
+  .main-container .project-wrapper button {
+    display: none;
+  }
+
+}
+
 @media only screen and (max-width: 600px) {
+  audio {
+    left:10px;
+  }
   .projects-wrapper .text-wrapper {
     justify-content: center;
     margin-right: 15px;
@@ -312,6 +337,9 @@ button:active {
     margin-bottom: 45px;
     max-width: 270px;
     text-shadow: 1px 1px rgb(48, 47, 47);
+  }
+  .social {
+    transform: rotateX(-5deg) rotateY(12deg) rotateZ(4deg);
   }
 
   .notice {
@@ -338,6 +366,7 @@ button:active {
 
   .button-description {
     display: block;
+
   }
 }
 

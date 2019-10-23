@@ -8,16 +8,22 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="main-container">
     <header>
       <img src="assets/images/glitch_2019-10-23_5-58-16.gif" alt="" class="avatar">
       <div class="text-wrapper">
         <h1>Andrey Kokorev</h1>
-        <div class="social"><span>Vkontakte: </span><a href="https://vk.com/id2932321">https://vk.com/id2932321</a>
-          <div class="social"><span>GitHub: </span><a
-              href="https://github.com/AndreyKokorev">https://github.com/AndreyKokorev</a></div>
+        <div class="social">
+          <span>Vkontakte: </span><a href="https://vk.com/id2932321">https://vk.com/id2932321</a>
         </div>
+          <div class="social"><span>GitHub: </span>
+            <a href="https://github.com/AndreyKokorev">https://github.com/AndreyKokorev</a>
+          </div>
+        
+        <!--<embed src="main-theme.mp3" type="audio/mpeg" hidden="true" autostart="false" loop="true">-->
+        <audio src="main-theme.mp3" controls></audio>
       </div>
     </header>
     <main>
@@ -72,8 +78,12 @@
         <div class="notice">click on the image to see the project</div>
         <button class="button-back" type="button" onclick="changeSlide(-1)"></button>
         <button class="button-forward" type="button" onclick="changeSlide(+1)"></button>
-        <button class="button-description" type="button"><div class="hint">show description</div></button>
-        <button class="button-description button-description-right" type="button"><div class="hint hint-right">show description</div></button>
+        <button class="button-description" type="button">
+          <div class="hint">show description</div>
+        </button>
+        <button class="button-description button-description-right" type="button">
+          <div class="hint hint-right">show description</div>
+        </button>
       </section>
     </main>
   </div>
