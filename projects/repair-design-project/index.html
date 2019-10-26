@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>repair-design-project</title>
-  
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="Fonts.css">
-  
+
 </head>
+
 <body>
   <div class="main-wrapper">
     <header>
@@ -20,19 +21,19 @@
         </div>
         <nav>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="">HOME</a></li>
-            <li class="menu__item"><a class="menu__link" href="">PROJECT</a></li>
-            <li class="menu__item"><a class="menu__link" href="">MEASUREMENT</a></li>
-            <li class="menu__item"><a class="menu__link" href="">TEAM</a></li>
-            <li class="menu__item"><a class="menu__link" href="">REVIEWS</a></li>
-            <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">PROJECT</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">MEASUREMENT</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">TEAM</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">REVIEWS</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">CONTACTS</a></li>
           </ul>
         </nav>
         <div class="tel">
-          <a class="tel__ref" href="tel:+7(928)768-32-39"">+7(928)768-32-39</a>
+          <a class="tel__ref" href="tel:+7(928)768-32-39">+7(928)768-32-39</a>
         </div>
-        <button type=" button" class="header-button">REQUEST A CALL</button>
-        </div>
+        <button type="button" class="header-button">REQUEST A CALL</button>
+      </div>
     </header>
     <main>
       <section class=" main-billboard">
@@ -50,7 +51,7 @@
             </div>
 
           </div>
-<a href="#map" for="map"><button class="scroll-down">SCROLL DOWN<div class="arrow-down"></div> </button></a> 
+          <a href="#map"><button class="scroll-down">SCROLL DOWN<div class="arrow-down"></div></button></a>
         </div>
       </section>
 
@@ -99,18 +100,18 @@
             <div class="slider-point"></div>
             <button class="slider-button-2 slider-button" type="button" onclick="getIndex1(1)"></button>
           </div>
-
+        </div>
       </section>
 
       <section class="online-control">
         <div class="online-control__inner-wrapper">
           <h2>ONLINE CONTROL</h2>
-          <img class="icon" src="assets/icons/Vector.svg" alt="">
+          <img class="icon" src="assets/icons/Vector.svg" alt="img">
           <div class="video-wrapper">
             <div class="video-wrapper__video-mask"></div>
-            <iframe class="video-wrapper__video" width="100%" height="434"
-              src="https://www.youtube.com/embed/TvVYeLvujLk" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video-wrapper__video" height="434" src="https://www.youtube.com/embed/TvVYeLvujLk"
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
           <div class="stroke"></div>
           <p class="p">At each facility, a camera is installed that broadcasts the progress of work
@@ -120,26 +121,29 @@
             broadcast
             from one of our facilities!
             Leave a request below and you will receive a link to the broadcast.</p>
-          <div class="order-form">
-            <div class="order-form__input-wrapper">
-              <label for="">Name</label>
-              <input type="text" placeholder="What is your name:">
+          <form>
+            <div class="order-form">
+              <div class="order-form__input-wrapper">
+                <label >Name</label>
+                <input class="input-name" type="text" placeholder="What is your name:">
+              </div>
+              <div class="order-form__input-wrapper">
+                <label >Phone</label>
+                <input class='input-phone' type="text" placeholder="Your phone number:">
+              </div>
+              <button class="order-form__submit-button" type="submit">SUBMIT</button>
+              <div class="order-form__checkbox-wrapper">
+                <input type="checkbox" checked>
+                <label >I agree to the processing of personal data</label>
+              </div>
             </div>
-            <div class="order-form__input-wrapper">
-              <label for="">Phone</label>
-              <input type="text" placeholder="Your phone number:">
-            </div>
-            <button class="order-form__submit-button" type="submit">SUBMIT</button>
-            <div class="order-form__checkbox-wrapper">
-              <input type="checkbox" checked>
-              <label for="">I agree to the processing of personal data</label>
-            </div>
+          </form>
           </div>
       </section>
 
       <section class="types-of-repair">
         <h2 class="types-of-repair__h2">TYPES OF REPAIR</h2>
-        <img class="types-of-repair__icon" src="" alt="">
+        <img src="#" class="types-of-repair__icon" >
         <div class="types-of-repair__column-wrapper">
           <div class="types-of-repair__column types-of-repair__column-1">
             <div class="column-box">
@@ -214,23 +218,23 @@
         </div>
         <div class="order-box">
           <span class="order-box__name">Leave a request for free departure of the measurer</span>
-          <form action="">
+          <form>
             <div class="form-wrapper">
               <div class="form-wrapper__input-wrapper">
-                <label for="">Name</label>
-                <input class="input-text" type="text" placeholder="What is your name:">
+                <label>Name</label>
+                <input class="input-name" type="text" placeholder="What is your name:">
               </div>
               <div class="form-wrapper__input-wrapper">
-                <label for="">Phone</label>
-                <input type="text" placeholder="Your phone number:">
+                <label>Phone</label>
+                <input class="input-phone" type="text" placeholder="Your phone number:">
               </div>
               <div class="form-wrapper__input-wrapper">
-                <label for="">Email</label>
-                <input class="input-text type=" email" placeholder="Your email">
+                <label>Email</label>
+                <input class="input-email" type="email" placeholder="Your email">
               </div>
               <div class="form-wrapper__checkbox-wrapper">
                 <input type="checkbox" checked>
-                <label for="">I agree to the processing of personal data</label>
+                <label>I agree to the processing of personal data</label>
               </div>
               <button class="order-box__submit-button" type="submit">Call the measurer</button>
             </div>
@@ -245,7 +249,7 @@
 
       <section class="architecture-styles">
         <div class="styles-box">
-          <h2 class="styles-box__name">WE REALIZE YOUR WILDEST FANTASIES</span>
+          <h2 class="styles-box__name">WE REALIZE YOUR WILDEST FANTASIES</h2>
             <ul class="styles-list">
               <li class="styles-list__item-active"><span>American classic</span> </li>
               <li class="styles-list__item">Empire</li>
@@ -267,10 +271,10 @@
           <div class="img-box__img-wrapper img-box__img-wrapper-4"></div>
         </div>
         <div class="img-box-1">
-          <img src="assets/images/image 5.png" class="img-box-1__img-wrapper" alt="">
-          <img src="assets/images/image 5 (1).png" class="img-box-1__img-wrapper" alt="">
-          <img src="assets/images/image 5 (2).png" class="img-box-1__img-wrapper" alt="">
-          <img src="assets/images/image 5 (3).png" class="img-box-1__img-wrapper" alt="">
+          <img src="assets/images/image 5.png" class="img-box-1__img-wrapper" alt="img">
+          <img src="assets/images/image 5 (1).png" class="img-box-1__img-wrapper" alt="img">
+          <img src="assets/images/image 5 (2).png" class="img-box-1__img-wrapper" alt="img">
+          <img src="assets/images/image 5 (3).png" class="img-box-1__img-wrapper" alt="img">
           <button class="slider-button-back" type="submit" onclick="changeSlide(-1)">
             <div class="arrow"></div>
           </button>
@@ -286,7 +290,7 @@
           but also significantly reduces the cost of materials and reduces the time of repair work.</p>
         <div class="column-wrapper">
           <div class="column column-1">
-            <img src="" alt="">
+            <img src='#' alt="img">
             <div class="column__box">
               <span class="column__name">Mini</span>
               <ul class="column__list">
@@ -299,7 +303,7 @@
             </div>
           </div>
           <div class="column column-2">
-            <img src="" alt="">
+            <img src="#" alt="img">
             <div class="column__box">
               <span class="column__name">Standart Redecorating</span>
               <ul class="column__list">
@@ -314,7 +318,7 @@
             </div>
           </div>
           <div class="column column-3">
-            <img src="" alt="">
+            <img src="#" alt="img">
             <div class="column__box">
               <span class="column__name">Full</span>
               <ul class="column__list">
@@ -352,7 +356,7 @@
               apartment
               as a whole and its individual stages.</p>
           </div>
-          <div class="slider-wrapper" ">
+          <div class="slider-wrapper" >
             <button class=" slider-button-1 slider-button" type="button" onclick="getIndex(-1)"></button>
             <div class="slider-point"></div>
             <div class="slider-point"></div>
@@ -393,12 +397,12 @@
             </div>
           </div>
           <div class="image-box__image-wrapper">
-            <img class="" src="assets/images/6-six-to-step-img-1.png" alt="">
-            <img class="" src="assets/images/6-six-to-step-img-2.png" alt="">
-            <img src="assets/images/image 2.png" alt="">
-            <img src="assets/images/image 3.png" alt="">
-            <img src="assets/images/image 5 (1).png" alt="">
-            <img src="assets/images/image 5.1.png" alt="">
+            <img src="assets/images/6-six-to-step-img-1.png" alt="img">
+            <img src="assets/images/6-six-to-step-img-2.png" alt="img">
+            <img src="assets/images/image 2.png" alt="img">
+            <img src="assets/images/image 3.png" alt="img">
+            <img src="assets/images/image 5 (1).png" alt="img">
+            <img src="assets/images/image 5.1.png" alt="img">
           </div>
         </div>
       </section>
@@ -433,7 +437,7 @@
           </div>
         </div>
         <div class="line"></div>
-        <p class="text-2"">
+        <p class="text-2">
           Each employee of our company is a qualified full-time specialist <br>
           with work experience of 6 years. <br>
           We do not have laborers and guest workers, each employee carries out <br> 
@@ -460,10 +464,10 @@
                 satisfied. Prices democratic. I recommended these masters.
               </p>
               <div class="info-wrapper">
-                <div class="square"><img src="assets/icons/2.svg" alt="">
+                <div class="square"><img src="assets/icons/2.svg" alt="img">
                   <div>40 M2</div>
                 </div>
-                <div class="days"><img src="assets/icons/3.svg" alt="">
+                <div class="days"><img src="assets/icons/3.svg" alt="img">
                   <div>48 DAYS</div>
                 </div>
               </div>
@@ -480,10 +484,10 @@
                 satisfied. Prices democratic. I recommended these masters.
               </p>
               <div class="info-wrapper">
-                <div class="square"><img src="assets/icons/2.svg" alt="">
+                <div class="square"><img src="assets/icons/2.svg" alt="img">
                   <div>90 M2</div>
                 </div>
-                <div class="days"><img src="assets/icons/3.svg" alt="">
+                <div class="days"><img src="assets/icons/3.svg" alt="img">
                   <div>128 DAYS</div>
                 </div>
               </div>
@@ -500,10 +504,10 @@
                 satisfied. Prices democratic. I recommended these masters.
               </p>
               <div class="info-wrapper">
-                <div class="square"><img src="assets/icons/2.svg" alt="">
+                <div class="square"><img src="assets/icons/2.svg" alt="img">
                   <div>56 M2</div>
                 </div>
-                <div class="days"><img src="assets/icons/3.svg" alt="">
+                <div class="days"><img src="assets/icons/3.svg" alt="img">
                   <div>86 DAYS</div>
                 </div>
               </div>
@@ -515,23 +519,23 @@
       <section class="feedback-section">
         <div class="inner-wrapper">
           <span class="feedback-section__name">HAVE ANY QUESTIONS?</span>
-          <form action="">
+          <form >
             <div class="form-wrapper">
               <div class="form-wrapper__input-wrapper">
-                <label for="">Name</label>
+                <label >Name</label>
                 <input type="text" placeholder="What is your name:">
               </div>
               <div class="form-wrapper__input-wrapper">
-                <label for="">Phone</label>
+                <label >Phone</label>
                 <input type="text" placeholder="Your phone number:">
               </div>
               <div class="form-wrapper__input-wrapper orm-wrapper__question-wrapper">
-                <label for="">Question</label>
+                <label >Question</label>
                 <input type="text" placeholder="I want to know">
               </div>
               <div class="form-wrapper__checkbox-wrapper">
                 <input type="checkbox" checked>
-                <label for="">I agree to the processing of personal data</label>
+                <label >I agree to the processing of personal data</label>
               </div>
             </div>
             <button class="feedback-section__submit-button" type="submit">SUBMIT</button>
@@ -548,7 +552,7 @@
           <div class="instagram"></div>
         </div>
         <div class="social-wrapper"></div>
-        <img class="map" src='assets/images/image 7.1.png'>
+        <img class="map" src='assets/images/image 7.1.png' alt="img">
       </section>
 
     </main>
@@ -560,18 +564,18 @@
         </div>
         <nav>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="">HOME</a></li>
-            <li class="menu__item"><a class="menu__link" href="">PROJECT</a></li>
-            <li class="menu__item"><a class="menu__link" href="">MEASUREMENT</a></li>
-            <li class="menu__item"><a class="menu__link" href="">TEAM</a></li>
-            <li class="menu__item"><a class="menu__link" href="">REVIEWS</a></li>
-            <li class="menu__item"><a class="menu__link" href="">CONTACTS</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">PROJECT</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">MEASUREMENT</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">TEAM</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">REVIEWS</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">CONTACTS</a></li>
           </ul>
         </nav>
         <div class="tel">
           <a class="tel__ref" href="tel:+7(928)768-32-39">+7(928)768-32-39</a>
         </div>
-        <button type=" button" class="footer-button">REQUEST A CALL</button>
+        <button type="button" class="footer-button">REQUEST A CALL</button>
       </div>
     </footer>
   </div>

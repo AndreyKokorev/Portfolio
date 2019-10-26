@@ -136,6 +136,7 @@ header .text-wrapper {
 
 .social a:hover {
   text-shadow: none;
+  left: 4px;
   bottom: 1px;
 }
 

@@ -123,3 +123,15 @@
     currentImage = images[index];
   }
 }
+
+//Validation
+
+let names = document.querySelectorAll('.input-name');
+let valid = false;
+for (let item of names) {
+  item.addEventListener('keydown', function () {
+    if (item.value[item.value.length - 1] < 'a' || item.value[item.value.length - 1] > 'z') {
+      console.log('fuck')
+    }
+  })
+}
