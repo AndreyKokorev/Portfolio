@@ -22,6 +22,7 @@
     box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #07b8ee8e, 0 0 35px #07b8ee8e, 0 0 40px #07b8ee8e, 0 0 50px #07b8ee8e, 0 0 75px #07b8ee8e;
   }
 }
+
 /*
 @keyframes neon2 {
   from {
@@ -70,6 +71,7 @@ body {
 
 header {
   position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 500px) minmax(300px, 500px);
   min-height: 170px;
@@ -80,7 +82,6 @@ header {
   background: rgba(236, 69, 236, 0.24);
   animation: neon1 5s ease-in-out infinite alternate;
   perspective: 200px;
-  //perspective-origin: right bottom;
   transform-style: flat;
 }
 
@@ -97,6 +98,7 @@ audio {
 }
 
 .avatar {
+  z-index: 2;
   max-width: 300px;
   opacity: 0.7;
   transform: rotateX(-5deg) rotateY(8deg) rotateZ(4deg);
@@ -141,6 +143,7 @@ header .text-wrapper {
 }
 
 details {
+  z-index: 3;
   margin-top: 40px;
   font-size: 20px;
   font-weight: bold;
@@ -163,6 +166,7 @@ details summary {
 }
 
 .line {
+  z-index: 4;
   width: 99%;
   height: 0px;
   margin: 0 auto;
@@ -195,7 +199,6 @@ details summary {
 .projects-wrapper h3 {
   margin-top: 10px;
   margin-left: 10px;
-
   text-shadow: 1px 1px rgb(48, 47, 47);
 }
 
@@ -259,6 +262,7 @@ button {
 }
 
 .button-back {
+  z-index: 5;
   top: 0;
   left: -50px;
   border-top-left-radius: 55px 145px;
@@ -266,6 +270,7 @@ button {
 }
 
 .button-forward {
+  z-index: 6;
   top: 0;
   right: -50px;
   border-top-right-radius: 55px 145px;
@@ -309,23 +314,23 @@ button:active {
   button {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 800px) {
   audio {
-    left:14px;
+    left: 14px;
   }
+
   .main-container .project-wrapper button {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 600px) {
   audio {
-    left:10px;
+    left: 10px;
   }
+
   .projects-wrapper .text-wrapper {
     justify-content: center;
     margin-right: 15px;
@@ -339,6 +344,7 @@ button:active {
     max-width: 270px;
     text-shadow: 1px 1px rgb(48, 47, 47);
   }
+
   .social {
     transform: rotateX(-5deg) rotateY(12deg) rotateZ(4deg);
   }
@@ -367,12 +373,5 @@ button:active {
 
   .button-description {
     display: block;
-
   }
 }
-
-/*
-mix-blend-mode: normal | multiply | screen | overlay | darken | lighten 
-  | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue 
-  | saturation | color | luminosity
-*/
