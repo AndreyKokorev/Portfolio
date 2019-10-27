@@ -502,6 +502,7 @@ main .online-control__inner-wrapper .icon::before {
 	position: relative;
 	left: -40px;
 	bottom: 85px;
+	z-index:20;
 	display: block;
 	height: 1px;
 	width: 32px;
@@ -513,6 +514,7 @@ main .online-control__inner-wrapper .icon::after {
 	position: relative;
 	right: -40px;
 	bottom: 88px;
+	z-index:20;
 	display: block;
 	height: 1px;
 	width: 32px;

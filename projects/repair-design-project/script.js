@@ -1,5 +1,4 @@
-//First slider
-{
+{ //First slider
   let images = document.querySelector('.completed-projects').getElementsByClassName('inner-wrapper');
   let points = document.querySelector('.completed-projects').querySelectorAll('.slider-point');
   let description = document.querySelector('.completed-projects').querySelectorAll('.label');
@@ -55,8 +54,8 @@
     currentDescription = description[index];
   }
 }
-//Second slider
-{
+
+{ //Second slider
   let images = document.querySelector('.six-steps').querySelector('.image-box__image-wrapper').children;
   let points = document.querySelector('.six-steps').querySelectorAll('.slider-point');
   let description = document.querySelector('.six-steps').querySelectorAll('.inner-wrapper');
@@ -103,8 +102,8 @@
     currentDescription = description[index];
   }
 }
-//Third Slider
-{
+
+{ //Third Slider
   let images = document.querySelector(".architecture-styles").querySelector(".img-box-1").children;
   let currentImage = images[0];
   let index = 0;
@@ -124,14 +123,34 @@
   }
 }
 
-//Validation
+{ //Validation
+  let names = document.querySelectorAll('.input-name');
+  let phone = document.querySelectorAll('.input-phone');
+  for (let item of names) {
+    item.addEventListener('keydown', function () {
+      setTimeout(() => {
+        if (item.value[item.value.length - 1] < 'a' || item.value[item.value.length - 1] > 'z') {
+          item.value = "";
+          item.style.background = "red";
+          setTimeout(() => {
+            item.style.background = "transparent";
+          }, 1000);
+        }
+      }, 100);
+    })
+  }
 
-let names = document.querySelectorAll('.input-name');
-let valid = false;
-for (let item of names) {
-  item.addEventListener('keydown', function () {
-    if (item.value[item.value.length - 1] < 'a' || item.value[item.value.length - 1] > 'z') {
-      console.log('fuck')
-    }
-  })
+  for (let item of phone) {
+    item.addEventListener('keydown', function () {
+      setTimeout(() => {
+        if (!parseInt(item.value[item.value.length - 1])) {
+          item.value = "";
+          item.style.background = "red";
+          setTimeout(() => {
+            item.style.background = "transparent";
+          }, 1000);
+        }
+      }, 100);
+    })
+  }
 }
