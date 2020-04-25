@@ -1,6 +1,9 @@
 let slides = document.querySelectorAll('.project-inner-wrapper');
+let projectCounter = document.querySelector('.projects');
 let index = 0;
 changeSlide(0);
+shaker();
+getDescription();
 
 function changeSlide(n) {
 
@@ -10,6 +13,7 @@ function changeSlide(n) {
 
   index += n;
   index = (index > 1) ? 0 : (index < 0) ? 1 : index;
+  projectCounter.innerHTML = `${(index === 0) ? 'Projects 1/2' : (index ===1) ? 'Projects 2/2' : 0}`;
   slides[index].style.display = "block";
 
 } 
@@ -38,7 +42,6 @@ function changeSlide(n) {
     })
   }
 }
-getDescription();
 
 function getDescription() {
   let check = true;
@@ -50,9 +53,9 @@ function getDescription() {
   let images = document.querySelectorAll('.project-inner-wrapper');
   let image1 = images[0].querySelector('a');
   let image2 = images[1].querySelector('a');
-console.log(description1);;
+
   for (let item of descriptionButtons) {
-    item.addEventListener('touchstart', function (e) {
+    item.addEventListener('touchstart', function () {
       if (check === true) {
         image1.style.display = "none";
         image2.style.display = "none";
@@ -74,7 +77,7 @@ console.log(description1);;
   }
 
 }
-shaker();
+
 function shaker(){
   let main = document.querySelector('body');
   setInterval(function(){

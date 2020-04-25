@@ -1,8 +1,49 @@
+if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+} else {
+  for (const btn of document.querySelectorAll('button')){
+    btn.classList.add('no-touch', 'button');
+  };
+}
+
+{ //Hamburger menu
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const mainMenu = document.querySelector('.menu');
+
+  window.addEventListener('resize', () => {
+    if(document.documentElement.clientWidth > 1030) {
+      mainMenu.style.display = 'flex';
+    } else {
+      mainMenu.style.display = 'none';
+    }
+  })
+
+  hamburgerMenu.addEventListener('click', () => {
+      hamburgerMenu.style.display = 'none';
+      mainMenu.style.display = 'block';
+  
+      document.addEventListener('click', function closeMenu(e) {
+        if (e.target !== hamburgerMenu) {
+          hamburgerMenu.style.display = 'block';
+          mainMenu.style.display = 'none';
+  
+          document.removeEventListener('click', closeMenu);
+        }
+      });
+  
+      mainMenu.addEventListener('mouseleave', function closeMenu() {
+        hamburgerMenu.style.display = 'block';
+        mainMenu.style.display = 'none';
+  
+        mainMenu.removeEventListener('mouseleave', closeMenu);
+      }); 
+  });
+}
+
 { //First slider
   let images = document.querySelector('.completed-projects').getElementsByClassName('inner-wrapper');
   let points = document.querySelector('.completed-projects').querySelectorAll('.slider-point');
   let description = document.querySelector('.completed-projects').querySelectorAll('.label');
-  let backButton = document.querySelector('.completed-projects').querySelector('.slider-button-back');
+  let backButton = document.querySelector('.completed-projects').querySelector('.slider-button-back-wrapper');
   let forwardButton = document.querySelector('.completed-projects').querySelector('.slider-button-forward');
   let currentPoint = points[0];
   let currentDescription = description[0];
@@ -32,14 +73,27 @@
       forwardButton.style.display = "none";
       backButton.style.display = "block";
     }
-    if (index == 0) {
-      move = 0;
-    } else if (index == points.length - 1) {
-      move = -1200;
-    } else if (m == 1) {
-      move -= 650;
-    } else if (m == -1) {
-      move += 650;
+
+    if (document.documentElement.clientWidth <= 650) {
+      if (index == 0) {
+        move = 0;
+      } else if (index == points.length - 1) {
+        move = -700;
+      } else if (m == 1) {
+        move -= 350;
+      } else if (m == -1) {
+        move += 350;
+      }
+    } else {
+      if (index == 0) {
+        move = 0;
+      } else if (index == points.length - 1) {
+        move = -1200;
+      } else if (m == 1) {
+        move -= 650;
+      } else if (m == -1) {
+        move += 650;
+      }
     }
 
     images[0].style.transition = "0.5s";
